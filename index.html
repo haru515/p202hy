@@ -13,89 +13,14 @@
   <meta property="og:site_name" content="物理の園">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@physicsgarden">
-  
   <title>物理の園 | Physics Garden</title>
-  
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Quicksand', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    nav {
-      background-color: #444;
-      padding: 0.5rem 1rem;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
-    nav ul li {
-      margin: 0 1rem;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-    .content {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-    .button {
-      display: inline-block;
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>物理の園</h1>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="/mechanics/index.html">力学</a></li>
-      <li><a href="/electromagnetism/index.html">電磁気学</a></li>
-      <li><a href="/waves/index.html">波動</a></li>
-      <li><a href="/atomic/index.html">原子物理学</a></li>
-    </ul>
-  </nav>
-  
+  <!-- 共通ヘッダーの読み込み -->
+  <?php include 'header.html'; ?>
+
   <div class="content">
     <h2>Welcome to Physics Garden</h2>
     <p>物理学の魅力を探求する『物理の園』へようこそ。最新の物理学のトピック、実験、理論をわかりやすく解説します。</p>
