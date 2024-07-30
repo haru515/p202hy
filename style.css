@@ -7,24 +7,27 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #fff;
+    color: #333;
     padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .header-container {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+}
+
+.header-container h1 {
+    font-size: 24px;
+    margin-right: 40px;
 }
 
 .header-container h1 a {
-    color: white;
+    color: #333;
     text-decoration: none;
-    margin-right: 20px;
 }
 
 nav ul {
@@ -32,23 +35,22 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0;
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    transition: background-color 0.3s;
+    padding: 5px 0;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    color: #007bff;
 }
 
 .main-container {
