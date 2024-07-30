@@ -60,6 +60,10 @@ nav ul li a:hover {
     text-align: center;
 }
 
+main {
+    flex: 1;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
