@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>振動運動 | 物理の園</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="/index.html">物理の園</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">ホーム</a></li>
+                    <li><a href="/math/math.html">数学的準備</a></li>
+                    <li><a href="/foundations.html">物理の周辺</a></li>
+                    <li><a href="/mechanics/mechanics.html">力学</a></li>
+                    <li><a href="/td.html">熱力学</a></li>
+                    <li><a href="/wave.html">波動</a></li>
+                    <li><a href="/em.html">電磁気学</a></li>
+                    <li><a href="/diffeq.html">微分方程式</a></li>
+                    <li><a href="/lt.html">ラプラス変換</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h2>第6章: 振動運動</h2>
+
+            <section>
+                <h3>6.1 単振動</h3>
+                <p>単振動は、物体が平衡位置を中心に往復運動する運動の一形態です。単振動の代表的な例として、ばね振り子や振り子運動が挙げられます。</p>
+                <p>単振動の基本的な式は以下の通りです：</p>
+                <p>\(x(t) = A \cos(\omega t + \phi)\)</p>
+                <p>ここで、\(x(t)\) は時間 \(t\) における変位、\(A\) は振幅、\(\omega\) は角周波数、\(\phi\) は初期位相です。</p>
+                <p>角周波数 \(\omega\) は次のように表されます：</p>
+                <p>\(\omega = \sqrt{\frac{k}{m}}\)</p>
+                <p>ここで、\(k\) はばね定数、\(m\) は物体の質量です。周期 \(T\) は \(\omega\) に関連し、\(T = \frac{2\pi}{\omega}\) となります。</p>
+            </section>
+
+            <section>
+                <h3>6.2 減衰振動</h3>
+                <p>減衰振動は、外部からの抵抗力が働くことで振幅が時間と共に減少する振動運動です。空気抵抗や摩擦などが減衰の原因となります。</p>
+                <p>減衰振動の運動方程式は以下のように表されます：</p>
+                <p>\(m \frac{d^2x}{dt^2} + c \frac{dx}{dt} + kx = 0\)</p>
+                <p>ここで、\(c\) は減衰係数です。この方程式の解は、以下のように減衰項が含まれる形になります：</p>
+                <p>\(x(t) = A e^{-\gamma t} \cos(\omega' t + \phi)\)</p>
+                <p>ここで、\(\gamma = \frac{c}{2m}\) は減衰係数、\(\omega' = \sqrt{\omega^2 - \gamma^2}\) は減衰後の角周波数です。</p>
+            </section>
+
+            <section>
+                <h3>6.3 強制振動</h3>
+                <p>強制振動は、外部から周期的な力を受けて行われる振動運動です。この外力が共振条件に達すると、共振現象が発生し、振幅が大きくなります。</p>
+                <p>強制振動の運動方程式は以下のように表されます：</p>
+                <p>\(m \frac{d^2x}{dt^2} + c \frac{dx}{dt} + kx = F_0 \cos(\omega_{\text{外}} t)\)</p>
+                <p>ここで、\(F_0\) は外力の振幅、\(\omega_{\text{外}}\) は外力の角周波数です。</p>
+                <p>共振が発生する条件は、外力の角周波数が自然振動数に等しい場合、つまり \(\omega_{\text{外}} = \omega\) のときです。このとき、振幅は極大となります。</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 物理の園. All rights reserved.</p>
+    </footer>
+</body>
+</html>
