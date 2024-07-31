@@ -11,6 +11,12 @@ body {
     margin: 20px 0;
 }
 
+.math div {
+    display: block;
+    margin: 0;
+    font-size: 1.2em;
+}
+
 .math p {
     display: inline-block;
     margin: 0;
