@@ -32,35 +32,55 @@
         <article>
             <h2>第6章: 振動運動</h2>
 
+            <nav class="chapter-navigation">
+                <a href="chapter5.html" class="prev-chapter">&laquo; 前の章: 回転運動</a>
+                <a href="mechanics.html" class="next-chapter">ホームに戻る &raquo;</a>
+            </nav>
+
             <section>
                 <h3>6.1 単振動</h3>
-                <p>単振動は、物体が平衡位置を中心に往復運動する運動の一形態です。単振動の代表的な例として、ばね振り子や振り子運動が挙げられます。</p>
-                <p>単振動の基本的な式は以下の通りです：</p>
-                <p>\(x(t) = A \cos(\omega t + \phi)\)</p>
-                <p>ここで、\(x(t)\) は時間 \(t\) における変位、\(A\) は振幅、\(\omega\) は角周波数、\(\phi\) は初期位相です。</p>
-                <p>角周波数 \(\omega\) は次のように表されます：</p>
-                <p>\(\omega = \sqrt{\frac{k}{m}}\)</p>
-                <p>ここで、\(k\) はばね定数、\(m\) は物体の質量です。周期 \(T\) は \(\omega\) に関連し、\(T = \frac{2\pi}{\omega}\) となります。</p>
+                <p>単振動は、物体が平衡位置を中心に周期的に往復する運動です。代表的な例として、ばね振り子や振り子運動があります。単振動の運動は以下の式で表されます：</p>
+                <div class="math">
+                    <div>\(x(t) = A \cos(\omega t + \phi)\)</div>
+                </div>
+                <p>ここで、\(x(t)\) は時間 \(t\) における変位、\(A\) は振幅、\(\omega\) は角周波数、\(\phi\) は初期位相です。角周波数 \(\omega\) は次のように表されます：</p>
+                <div class="math">
+                    <div>\(\omega = \sqrt{\frac{k}{m}}\)</div>
+                </div>
+                <p>ここで、\(k\) はばね定数、\(m\) は物体の質量です。振動の周期 \(T\) は \(\omega\) に関連し、以下の式で表されます：</p>
+                <div class="math">
+                    <div>\(T = \frac{2\pi}{\omega}\)</div>
+                </div>
+                <p>単振動は物理学や工学において重要であり、多くの自然現象や人工的なシステムで観察されます。</p>
             </section>
 
             <section>
                 <h3>6.2 減衰振動</h3>
-                <p>減衰振動は、外部からの抵抗力が働くことで振幅が時間と共に減少する振動運動です。空気抵抗や摩擦などが減衰の原因となります。</p>
-                <p>減衰振動の運動方程式は以下のように表されます：</p>
-                <p>\(m \frac{d^2x}{dt^2} + c \frac{dx}{dt} + kx = 0\)</p>
-                <p>ここで、\(c\) は減衰係数です。この方程式の解は、以下のように減衰項が含まれる形になります：</p>
-                <p>\(x(t) = A e^{-\gamma t} \cos(\omega' t + \phi)\)</p>
-                <p>ここで、\(\gamma = \frac{c}{2m}\) は減衰係数、\(\omega' = \sqrt{\omega^2 - \gamma^2}\) は減衰後の角周波数です。</p>
+                <p>減衰振動は、空気抵抗や摩擦などの外部からの抵抗力により、時間と共に振幅が減少する振動です。減衰振動の運動方程式は次のように表されます：</p>
+                <div class="math">
+                    <div>\(m \frac{d^2x}{dt^2} + c \frac{dx}{dt} + kx = 0\)</div>
+                </div>
+                <p>ここで、\(c\) は減衰係数です。解は以下のようになります：</p>
+                <div class="math">
+                    <div>\(x(t) = A e^{-\gamma t} \cos(\omega' t + \phi)\)</div>
+                </div>
+                <p>ここで、\(\gamma = \frac{c}{2m}\) は減衰係数、\(\omega' = \sqrt{\omega^2 - \gamma^2}\) は減衰後の角周波数です。減衰の度合いに応じて、運動のパターンはアンダーダンピング（\(\gamma < \omega\)）、クリティカルダンピング（\(\gamma = \omega\)）、オーバーダンピング（\(\gamma > \omega\)）に分類されます。</p>
             </section>
 
             <section>
                 <h3>6.3 強制振動</h3>
-                <p>強制振動は、外部から周期的な力を受けて行われる振動運動です。この外力が共振条件に達すると、共振現象が発生し、振幅が大きくなります。</p>
-                <p>強制振動の運動方程式は以下のように表されます：</p>
-                <p>\(m \frac{d^2x}{dt^2} + c \frac{dx}{dt} + kx = F_0 \cos(\omega_{\text{外}} t)\)</p>
-                <p>ここで、\(F_0\) は外力の振幅、\(\omega_{\text{外}}\) は外力の角周波数です。</p>
-                <p>共振が発生する条件は、外力の角周波数が自然振動数に等しい場合、つまり \(\omega_{\text{外}} = \omega\) のときです。このとき、振幅は極大となります。</p>
+                <p>強制振動は、外部から周期的な力を受けて発生する振動です。この外力がシステムの自然振動数と一致する場合、共振現象が起こり、振幅が非常に大きくなります。</p>
+                <p>強制振動の運動方程式は次のように表されます：</p>
+                <div class="math">
+                    <div>\(m \frac{d^2x}{dt^2} + c \frac{dx}{dt} + kx = F_0 \cos(\omega_{\text{外}} t)\)</div>
+                </div>
+                <p>ここで、\(F_0\) は外力の振幅、\(\omega_{\text{外}}\) は外力の角周波数です。共振が発生する条件は、外力の角周波数がシステムの自然振動数 \(\omega\) に等しい場合であり、このとき振幅は最大となります。この現象は、橋の共振や機械の振動制御など、工学的に重要な問題です。</p>
             </section>
+
+            <nav class="chapter-navigation">
+                <a href="chapter5.html" class="prev-chapter">&laquo; 前の章: 回転運動</a>
+                <a href="mechanics.html" class="next-chapter">ホームに戻る &raquo;</a>
+            </nav>
         </article>
     </main>
 
