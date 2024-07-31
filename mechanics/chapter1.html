@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>運動の記述 | 物理の園</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="/index.html">物理の園</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">ホーム</a></li>
+                    <li><a href="/math/math.html">数学的準備</a></li>
+                    <li><a href="/foundations.html">物理の周辺</a></li>
+                    <li><a href="/mechanics/mechanics.html">力学</a></li>
+                    <li><a href="/td.html">熱力学</a></li>
+                    <li><a href="/wave.html">波動</a></li>
+                    <li><a href="/em.html">電磁気学</a></li>
+                    <li><a href="/diffeq.html">微分方程式</a></li>
+                    <li><a href="/lt.html">ラプラス変換</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h2>第1章: 運動の記述</h2>
+
+            <section>
+                <h3>1.1 位置、速度、加速度</h3>
+                <p>物体の位置は、座標系において位置ベクトルとして表現されます。速度は位置ベクトルの時間微分、加速度は速度の時間微分です。</p>
+                <p>例えば、位置ベクトル \(\vec{r}(t)\) が時間 \(t\) の関数として与えられるとき、速度 \(\vec{v}(t)\) と加速度 \(\vec{a}(t)\) は以下のように定義されます。</p>
+                <ul>
+                    <li>速度: \(\vec{v}(t) = \frac{d}{dt} \vec{r}(t)\)</li>
+                    <li>加速度: \(\vec{a}(t) = \frac{d}{dt} \vec{v}(t) = \frac{d^2}{dt^2} \vec{r}(t)\)</li>
+                </ul>
+                <p>これらの定義は、運動の方向と速さを知るために非常に重要です。</p>
+
+                <h4>例: 自由落下運動</h4>
+                <p>自由落下運動は重力のみが作用する運動です。この場合、加速度 \( \vec{a} \) は重力加速度 \( g \) に等しくなり、位置と速度は次のように表現されます:</p>
+                <ul>
+                    <li>速度: \( \vec{v}(t) = -gt + v_0 \)</li>
+                    <li>位置: \( \vec{r}(t) = -\frac{1}{2}gt^2 + v_0t + r_0 \)</li>
+                </ul>
+                <p>ここで、\( v_0 \) は初速度、\( r_0 \) は初期位置です。</p>
+            </section>
+
+            <section>
+                <h3>1.2 運動の種類</h3>
+                <p>運動には様々な種類があり、それぞれ異なる特徴を持ちます。ここでは、代表的な三つの運動について説明します。</p>
+                <ul>
+                    <li><strong>直線運動</strong>: 一次元空間における運動。例えば、等速度直線運動や等加速度直線運動。等速度直線運動は速度が一定であり、等加速度直線運動は加速度が一定です。</li>
+                    <li><strong>平面運動</strong>: 二次元空間における運動。放物運動では、物体が斜めに投げ出されたときの運動を指し、重力が作用して放物線を描きます。</li>
+                    <li><strong>円運動</strong>: 等速円運動では、物体が一定の速度で円軌道を描いて動きます。この場合、物体には向心加速度が働き、円の中心に向かって加速度が生じます。</li>
+                </ul>
+
+                <h4>例: 放物運動</h4>
+                <p>放物運動では、物体は初速度 \( \vec{v_0} \) で斜め上に投げ出され、その後重力の影響で下向きに加速度を受けます。運動方程式は以下の通りです:</p>
+                <ul>
+                    <li>水平位置: \( x(t) = v_0\cos\theta \cdot t \)</li>
+                    <li>垂直位置: \( y(t) = v_0\sin\theta \cdot t - \frac{1}{2}gt^2 \)</li>
+                </ul>
+                <p>ここで、\( \theta \) は投げ出し角度、\( g \) は重力加速度です。この運動は平面上で放物線を描きます。</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 物理の園. All rights reserved.</p>
+    </footer>
+</body>
+</html>
