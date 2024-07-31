@@ -14,13 +14,13 @@ body {
 .math div {
     display: block;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 2.0em;
 }
 
 .math p {
     display: inline-block;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 2.0em;
 }
 
 header {
