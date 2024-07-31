@@ -66,7 +66,15 @@ nav ul li a:hover {
 }
 
 main {
-    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    max-width: 800px; /* 必要に応じて最大幅を調整 */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px; /* 必要に応じて内側の余白を調整 */
 }
 
 .grid-container {
