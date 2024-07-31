@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>回転運動 | 物理の園</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="/index.html">物理の園</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">ホーム</a></li>
+                    <li><a href="/math/math.html">数学的準備</a></li>
+                    <li><a href="/foundations.html">物理の周辺</a></li>
+                    <li><a href="/mechanics/mechanics.html">力学</a></li>
+                    <li><a href="/td.html">熱力学</a></li>
+                    <li><a href="/wave.html">波動</a></li>
+                    <li><a href="/em.html">電磁気学</a></li>
+                    <li><a href="/diffeq.html">微分方程式</a></li>
+                    <li><a href="/lt.html">ラプラス変換</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h2>第5章: 回転運動</h2>
+
+            <section>
+                <h3>5.1 角運動量</h3>
+                <p>角運動量は、物体の回転運動における「運動の量」を表す物理量です。角運動量 \( \vec{L} \) は次のように定義されます：</p>
+                <p>\(\vec{L} = \vec{r} \times \vec{p}\)</p>
+                <p>ここで、\(\vec{r}\) は回転中心から物体への位置ベクトル、\(\vec{p}\) は物体の運動量です。角運動量はベクトル積によって計算され、回転の軸に対して垂直な方向を持ちます。</p>
+            </section>
+
+            <section>
+                <h3>5.2 トルク</h3>
+                <p>トルクは、回転運動を引き起こす力の回転力を表します。トルク \( \vec{\tau} \) は次のように定義されます：</p>
+                <p>\(\vec{\tau} = \vec{r} \times \vec{F}\)</p>
+                <p>ここで、\(\vec{r}\) は力の作用線から回転中心までの位置ベクトル、\(\vec{F}\) は作用する力です。トルクの大きさは、力の大きさと力の作用線までの距離、およびその角度に依存します。</p>
+            </section>
+
+            <section>
+                <h3>5.3 回転運動のエネルギー</h3>
+                <p>回転する物体のエネルギーは、回転運動に対応する運動エネルギーであり、次のように表されます：</p>
+                <p>\(K_{\text{回転}} = \frac{1}{2}I\omega^2\)</p>
+                <p>ここで、\(I\) は物体の慣性モーメント、\(\omega\) は角速度です。慣性モーメントは物体の質量分布に依存し、物体がどれだけ回転しにくいかを示す量です。</p>
+            </section>
+
+            <section>
+                <h3>5.4 剛体の回転</h3>
+                <p>剛体とは、変形しない理想的な物体を指します。剛体の回転運動は、全ての質点が一定の角速度で回転する運動です。剛体の回転運動において重要な概念には、回転の中心、慣性モーメント、角速度などがあります。</p>
+                <p>慣性モーメント \(I\) は次のように計算されます：</p>
+                <p>\(I = \sum m_i r_i^2\)</p>
+                <p>ここで、\(m_i\) は各質点の質量、\(r_i\) は回転中心から質点までの距離です。慣性モーメントは回転軸の位置によって異なるため、物体の回転軸の選び方が重要です。</p>
+            </section>
+
+            <section>
+                <h3>5.5 角運動量保存の法則</h3>
+                <p>角運動量保存の法則は、外部からのトルクが作用しない場合、物体の角運動量が一定であることを示します。この法則は次のように表されます：</p>
+                <p>\(\vec{L}_{\text{初}} = \vec{L}_{\text{後}}\)</p>
+                <p>ここで、\(\vec{L}_{\text{初}}\) は初期の角運動量、\(\vec{L}_{\text{後}}\) は後の角運動量です。この法則により、回転運動の安定性や回転速度の変化などを解析することができます。</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 物理の園. All rights reserved.</p>
+    </footer>
+</body>
+</html>
