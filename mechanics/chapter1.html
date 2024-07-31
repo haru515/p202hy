@@ -42,27 +42,36 @@
                 <p>物体の運動を理解するためには、位置、速度、加速度の概念が基本です。</p>
                 <p>物体の位置は、座標系における位置ベクトル \( \vec{r}(t) \) で表されます。例えば、三次元空間では次のように表現できます:</p>
                 <div class="math">
-                    <div>\( \vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k} \)</div>
+                    <div>\[ \vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k} \]</div>
                 </div>
                 <p>ここで、\( x(t), y(t), z(t) \) は時間 \( t \) における座標成分です。物体の速度 \( \vec{v}(t) \) は位置ベクトルの時間微分として定義されます:</p>
                 <div class="math">
-                    <div>\( \vec{v}(t) = \frac{d}{dt} \vec{r}(t) = \dot{x}(t)\hat{i} + \dot{y}(t)\hat{j} + \dot{z}(t)\hat{k} \)</div>
+                    <div>\[
+                        \begin{align}
+                        \vec{v}(t) &= \frac{d}{dt} \vec{r}(t) \\
+                                   &= \dot{x}(t)\hat{i} + \dot{y}(t)\hat{j} + \dot{z}(t)\hat{k}
+                        \end{align}
+                        \]</div>
                 </div>
                 <p>さらに、加速度 \( \vec{a}(t) \) は速度の時間微分として定義され、以下のように表されます:</p>
                 <div class="math">
-                    <div>\( \vec{a}(t) = \frac{d}{dt} \vec{v}(t) = \frac{d^2}{dt^2} \vec{r}(t) = \ddot{x}(t)\hat{i} + \ddot{y}(t)\hat{j} + \ddot{z}(t)\hat{k} \)</div>
+                    <div>\[ \begin{align}
+                        \vec{a}(t) &= \frac{d}{dt} \vec{v}(t) = \frac{d^2}{dt^2} \vec{r}(t) \\ 
+                        &= \ddot{x}(t)\hat{i} + \ddot{y}(t)\hat{j} + \ddot{z}(t)\hat{k}
+                        \end{align}
+                        \] </div>
                 </div>
                 <p>これらの量は、運動の方向と変化を記述するために非常に重要です。</p>
 
                 <h4>例: 自由落下運動</h4>
                 <p>自由落下運動では、物体は初速度 \( \vec{v}_0 \) で始まり、重力加速度 \( g \) のみが作用します。この場合、加速度は常に一定であり、次のように表されます:</p>
                 <div class="math">
-                    <div>\( \vec{a}(t) = -g\hat{j} \)</div>
+                    <div>\[ \vec{a}(t) = -g\hat{j} \]</div>
                 </div>
                 <p>ここで、下向きの方向を負と定義しています。速度と位置は次のように変化します:</p>
                 <div class="math">
-                    <div>\( \vec{v}(t) = -gt + \vec{v}_0 \)</div>
-                    <div>\( \vec{r}(t) = -\frac{1}{2}gt^2 + \vec{v}_0t + \vec{r}_0 \)</div>
+                    <div>\[ \vec{v}(t) = -gt\hat{j} + \vec{v}_0 \]</div>
+                    <div>\[ \vec{r}(t) = -\frac{1}{2}gt^2 \hat{j} + \vec{v}_0t + \vec{r}_0 \]</div>
                 </div>
                 <p>この運動の具体例として、ビルから投げ落とされたボールの運動が挙げられます。初速度が0の場合、ボールは等加速度で落下し、速度が時間とともに増加します。</p>
             </section>
